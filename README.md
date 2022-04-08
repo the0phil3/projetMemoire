@@ -5,7 +5,7 @@ Code for Memoire from SHD database "Militaires décédés sur les théâtres d'o
 <b> Présentation de sujet mémoire : 
 Approches quantitatives de la guerre du Rif </b>
 <p>
-Lors d’une interview sur la chaîne youtube Thinkerview en 2021 le candidat à l’élection présidentielle Eric Zemmour s’est exprimé sur les soldats coloniaux pendant la Guerre de 14-18 et la Deuxième Guerre mondiale et a dit : « Ils n’ont pas sauvé la France. Ce n’est pas eux qu’on a mis au premier rang. Tout ça est faux. C’est des légendes pour nous culpabiliser. » Force est de constater que le débat sur la mémoire des guerres mondiales et la colonisation est encore plus d’actualité sur la scène politique française qu’il n’a jamais été. Mais quelle est la réalité historique, et les politiciens comme M. Zemmour ont-ils tort ou raison? 
+Lors d’une interview sur la chaîne youtube Thinkerview en 2021 le candidat à l’élection présidentielle Eric Zemmour s’est exprimé sur les soldats coloniaux pendant la Guerre de 14-18 et la Deuxième Guerre mondiale et a dit : « Ils n’ont pas sauvé la France. Ce n’est pas eux qu’on a mis au premier rang. Tout ça est faux. C’est des légendes pour nous culpabiliser. » Force est de constater que le débat sur la mémoire des guerres mondiales et la colonisation est encore plus d’actualité sur la scène politique française qu’il n’a jamais été. Mais quel est le consensus historique, et les politiciens comme M. Zemmour ont-ils tort ou raison? 
 </p><p>
 Les réponses à ces questions ne sont pas si évidentes, surtout quand nous prenons en compte les différentes guerres de l’histoire contemporaine française où des troupes coloniales ont été engagées depuis la période napoléonienne. Reprendre ce sujet d’actualité à travers une étude quantitative de la guerre du Rif est ce que je souhaite faire comme recherche pour mon mémoire de master. 
 </p><p>
@@ -19,7 +19,7 @@ L’histoire de cette guerre a souvent été oubliée mais aujourd’hui elle g�
 <b>Méthodologie et corpus</b>
 
 <p>
-Pour répondre à ma question de recherche, j’ai à ma disposition trois types de source : 
+Pour répondre à ma problematique, j’ai à ma disposition trois types de source : 
 Les registres matricules, qui sont numérisés sur le site Mémoires des hommes mais seulement jusqu'à 1918. Étant donné que des unités combattantes de la Grande guerre (nord-africaines, coloniales et métropolitaines) se sont battus aussi pendant la guerre du Rif, il est possible qu’une quantité importante de registres soit déjà numérisée.
 Les journaux des marches et d’opérations des régiments ayant participé à la guerre du Rif, qui ne sont pas numérisés. Le but d’inclure ces journaux dans ma recherche est d’apporter un contexte historique aux données quantitatives.  
 Les données de la base des « Militaires décédés sur les théâtres d'opérations extérieurs (1905-1962) ». Cette base de données est censée contenir tous les morts pendant la guerre du Rif mais cela reste à vérifier.  
@@ -29,6 +29,40 @@ La première étape de ma recherche consisterait à établir une base de donnée
 </p> <p>
 Une fois qu’une base de données des morts pendant la guerre du rif est constituée entre ces deux ensembles, je pourrais débuter son traitement et son analyse historique en fonction des informations tirées des journaux des régiments et d’autres correspondances militaires qui détaillaient la situation sur le terrain. L'objectif final serait d’accompagner mon analyse des données par le partage des mes données brutes (siteweb ou excel) pour qu'elles puissent servir à d’autres études sur le sujet.
 </p>
+
+<b>Travail fait</b>
+<p>
+Grâce à la disponibilité en format CSV de la base de données des morts en opération extérieure, je n'ai pas eu besoin de faire un scrapping du site du SHD. 
+J'ai téléchargé les données directement de ce lien: [https://www.memoiredeshommes.sga.defense.gouv.fr/fr/arkotheque/navigation_facette/index.php?f=opendata](ici). 
+J'ai procédé à un traitement de la  base « Militaires décédés sur les théâtres d'opérations extérieurs (1905-1962) » avec la librairie `Pandas` de `Python`. 
+La base comportait 20.059 entrées qui correspondaient chacune à un militaire mort. </p>
+
+<p>
+Ensuite j'ai filtré la base par année et par lieu de décès. La période qui m'intéresse est de janvier 1925 à décembre 1926 où la majorité des combats ont eu lieu. 
+Dans la base, il y a une colonne pour le pays de décès et là j'ai filtré pour le Maroc. Le script que j'ai utilisé pour filtrer la base se trouve  
+sur [https://github.com/the0phil3/projetMemoire](Github). Ce travail m'a permis de créer une base de données personnelle des sujets qui m'intéressent.</p>
+
+<p>
+Avec cette base constituée, j'ai commencé les premières manipulation des caractéristiques des soldats telles que leur régiment ou leur lieu de décès. 
+Mon but était de faire une pré-analyse avant de commencer à traiter les soldats par nom et faire l'OCR des fiches matricules. 
+Le script que j'ai utilisé pour faire mes premières figures se trouve sur [https://github.com/the0phil3/projetMemoire](Github). 
+J'ai chercher les 20 régiments avec le plus de pertes et les 20 lieux avec le plus de morts dans ma base :</p>
+![Fig 1](/premierManip/20regiments.jpg)
+![Fig 2](/premierManip/20places.jpg)
+
+<b> Les problèmes </b>
+<p>Le premier problème qui m'a interpellé est la vérification de mes données avec celles Max Schiavon dans son ouvrage. 
+Je partage ici un scan de l'ouvrage de Schiavon qui décrit les pertes de l'armée avant l'offensif rifaine de 1925.
+</p>
+![Fig 3](/premierManip/report1/schiavon.jpeg)
+<p>
+Dans le support de son ouvrage, il inclut beaucoup de données quantitatives sur la guerre mais pas le bilan des pertes totales. 
+Donc il faudrait que j'essaie de trouver dans quel référence au SHD il a trouvé ces chiffres.  </p>
+
+<p>
+Je me suis aussi rendu compte en créant mes premières figures que la base de données était pas forcement très propre. 
+J'ai trouvé déjà un cas d'un double de la même personne et dans la Figure 2 vous pouvez voir qu'il y a « M'Sila » qui est en Algérie et pas au Maroc. 
+Il faudrait que je trouve un moyen de filtrer les doubles et procéder à une vérification des noms de lieu. </p>
 
 <b>Bibliographie</b>
 
