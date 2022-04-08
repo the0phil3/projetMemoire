@@ -37,21 +37,21 @@ La base comportait 20.059 entrées qui correspondaient chacune à un militaire m
 
 Ensuite j'ai filtré la base par année et par lieu de décès. La période qui m'intéresse est de janvier 1925 à décembre 1926 où la majorité des combats ont eu lieu. 
 Dans la base, il y a une colonne pour le pays de décès et là j'ai filtré pour le Maroc. Le script que j'ai utilisé pour filtrer la base se trouve  
-sur [https://github.com/the0phil3/projetMemoire](Github). Ce travail m'a permis de créer une base de données personnelle des sujets qui m'intéressent.
+sur [https://github.com/the0phil3/projetMemoire]. Ce travail m'a permis de créer une base de données personnelle des sujets qui m'intéressent.
 
 
 Avec cette base constituée, j'ai commencé les premières manipulation des caractéristiques des soldats telles que leur régiment ou leur lieu de décès. 
 Mon but était de faire une pré-analyse avant de commencer à traiter les soldats par nom et faire l'OCR des fiches matricules. 
 Le script que j'ai utilisé pour faire mes premières figures se trouve sur [https://github.com/the0phil3/projetMemoire](Github). 
 J'ai chercher les 20 régiments avec le plus de pertes et les 20 lieux avec le plus de morts dans ma base :
-![Fig 1](/Users/Theo/dev/projetMemoire/premierManip/20regiments.jpg)
-![Fig 2](/Users/Theo/dev/projetMemoire/premierManip/20places.jpg)
+![Fig 1](/premierManip/20regiments.jpg)
+![Fig 2](/premierManip/20places.jpg)
 
 <b>Les problèmes </b>
 Le premier problème qui m'a interpellé est la vérification de mes données avec celles Max Schiavon dans son ouvrage. 
 Je partage ici un scan de l'ouvrage de Schiavon qui décrit les pertes de l'armée avant l'offensif rifaine de 1925.
 
-![Fig 3](/Users/Theo/dev/projetMemoire/premierManip/report1/schiavon.jpeg)
+![Fig 3](/premierManip/report1/schiavon.jpeg)
 
 Dans le support de son ouvrage, il inclut beaucoup de données quantitatives sur la guerre mais pas le bilan des pertes totales. 
 Donc il faudrait que j'essaie de trouver dans quel référence au SHD il a trouvé ces chiffres.  
