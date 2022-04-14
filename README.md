@@ -59,11 +59,11 @@ Donc il faudrait que j'essaie de trouver dans quel référence au SHD il a trouv
 
 Je me suis aussi rendu compte en créant mes premières figures que la base de données était pas forcement très propre. 
 J'ai trouvé déjà un cas d'un double de la même personne et dans la Figure 2 vous pouvez voir qu'il y a « M'Sila » qui est en Algérie et pas au Maroc. 
-Il faudrait que je trouve un moyen de filtrer les doubles et procéder à une vérification des noms de lieu. 
+Pour resoudre se probleme j'ai fait un `mortsduRif.drop_duplicates(subset=['nom', 'prenom', 'id_unite_intitule'], keep='first')`.
+Maintenant je dois procéder à une vérification des noms de lieu. 
 
 <b>Travail à faire </b>
 Maintenant que j'ai ma base constituée, il faut: 
-- La nettoyer
 - Contacter le SHD pour vérifier l'origine des données chiffrés 
 - Trouver une méthode pour diviser les soldats par origines 
 - Constituer mon échantillon des fiches matricules numérisées
