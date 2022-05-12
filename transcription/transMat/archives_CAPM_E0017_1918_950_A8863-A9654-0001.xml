@@ -11,8 +11,22 @@
   </Description>
   
   <Tags>
-    <OtherTag ID="BT3545" LABEL="corps_d&#39;affectation" DESCRIPTION="block type corps_d&#39;affectation"/><OtherTag ID="BT3544" LABEL="matricule_id" DESCRIPTION="block type matricule_id"/><OtherTag ID="BT3543" LABEL="engagement" DESCRIPTION="block type engagement"/><OtherTag ID="BT3542" LABEL="etat_civil" DESCRIPTION="block type etat_civil"/><OtherTag ID="BT3541" LABEL="noms" DESCRIPTION="block type noms"/>
-    <OtherTag ID="LT1220" LABEL="historique" DESCRIPTION="line type historique"/><OtherTag ID="LT1219" LABEL="matricule_num" DESCRIPTION="line type matricule_num"/><OtherTag ID="LT1218" LABEL="engagement5" DESCRIPTION="line type engagement5"/><OtherTag ID="LT1217" LABEL="engagement4" DESCRIPTION="line type engagement4"/><OtherTag ID="LT1216" LABEL="engagement3" DESCRIPTION="line type engagement3"/><OtherTag ID="LT1215" LABEL="engagement2" DESCRIPTION="line type engagement2"/><OtherTag ID="LT1214" LABEL="engagement1" DESCRIPTION="line type engagement1"/><OtherTag ID="LT1213" LABEL="lieu_de_naissance" DESCRIPTION="line type lieu_de_naissance"/><OtherTag ID="LT1212" LABEL="date_de_naissance" DESCRIPTION="line type date_de_naissance"/><OtherTag ID="LT1210" LABEL="prenom" DESCRIPTION="line type prenom"/><OtherTag ID="LT1209" LABEL="nom" DESCRIPTION="line type nom"/>
+          <OtherTag ID="BT3545" LABEL="corps_d&#39;affectation" DESCRIPTION="block type corps_d&#39;affectation"/>
+          <OtherTag ID="BT3544" LABEL="matricule_id" DESCRIPTION="block type matricule_id"/>
+          <OtherTag ID="BT3543" LABEL="engagement" DESCRIPTION="block type engagement"/>
+          <OtherTag ID="BT3542" LABEL="etat_civil" DESCRIPTION="block type etat_civil"/>
+          <OtherTag ID="BT3541" LABEL="noms" DESCRIPTION="block type noms"/>
+          <OtherTag ID="LT1220" LABEL="historique" DESCRIPTION="line type historique"/>
+          <OtherTag ID="LT1219" LABEL="matricule_num" DESCRIPTION="line type matricule_num"/>
+          <OtherTag ID="LT1218" LABEL="engagement5" DESCRIPTION="line type engagement5"/>
+          <OtherTag ID="LT1217" LABEL="engagement4" DESCRIPTION="line type engagement4"/>
+          <OtherTag ID="LT1216" LABEL="engagement3" DESCRIPTION="line type engagement3"/>
+          <OtherTag ID="LT1215" LABEL="engagement2" DESCRIPTION="line type engagement2"/>
+          <OtherTag ID="LT1214" LABEL="engagement1" DESCRIPTION="line type engagement1"/>
+          <OtherTag ID="LT1213" LABEL="lieu_de_naissance" DESCRIPTION="line type lieu_de_naissance"/>
+          <OtherTag ID="LT1212" LABEL="date_de_naissance" DESCRIPTION="line type date_de_naissance"/>
+          <OtherTag ID="LT1210" LABEL="prenom" DESCRIPTION="line type prenom"/>
+          <OtherTag ID="LT1209" LABEL="nom" DESCRIPTION="line type nom"/>
   </Tags>
   
   <Layout>

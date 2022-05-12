@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Titre</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Fichier créé par transformation à partir de l'export réalisé dans escriptorium</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p>
+            <pb n=""/>
+            <pb n=""/>
+            <pb n=""/>
+            <pb n=""/>
+            <pb n=""/>
+         </p>
+      </body>
+   </text>
+</TEI>

@@ -127,19 +127,9 @@
                         <xs:documentation>cote du registre</xs:documentation>
                     </xs:annotation>
                 </xs:element>
-                <xs:element name="niveau" type="xs:int" maxOccurs="1" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>niveau d'instruction de la personne (réservé aux actes décrivant une seule personne)</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
                 <xs:element name="nro" type="xs:string" maxOccurs="1" minOccurs="0">
                     <xs:annotation>
                         <xs:documentation>numéro de matricule pour les registres militaires et les fiches mort pour la France</xs:documentation>
-                    </xs:annotation>
-                </xs:element>
-                <xs:element name="profession" type="xs:string" maxOccurs="unbounded" minOccurs="0">
-                    <xs:annotation>
-                        <xs:documentation>profession de la personne désignée dans l'acte (réservé aux actes décrivant une seule personne)</xs:documentation>
                     </xs:annotation>
                 </xs:element>
                 <xs:element name="mention" type="xs:string" maxOccurs="1" minOccurs="0">
@@ -148,11 +138,6 @@
                     </xs:annotation>
                 </xs:element>
             </xs:sequence>
-            <xs:attribute name="autre" type="xs:boolean" use="optional">
-                <xs:annotation>
-                    <xs:documentation>indique la présence d'informations plus complétes sur le site d'origine</xs:documentation>
-                </xs:annotation>
-            </xs:attribute>
             <xs:attribute name="numerise" type="xs:boolean" use="optional">
                 <xs:annotation>
                     <xs:documentation>indique si un document numérisé est disponible sur le site d'origine</xs:documentation>
