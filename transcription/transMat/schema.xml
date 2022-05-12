@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+    <xs:include schemaLocation=""/>
+    <xs:include schemaLocation=""/>
+    <xs:include schemaLocation=""/>
+    <xs:annotation>
+        <xs:documentation>version 1.4 (ajout de l'élément mention sous l'élément complément)</xs:documentation>
+    </xs:annotation>
+    <xs:include schemaLocation=""/>
+    <xs:element name="document">
+        <xs:annotation>
+            <xs:documentation>L'élément racine qui regroupe toutes les informations.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="type" minOccurs="1" maxOccurs="1"/>
+                <xs:element ref="personne" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="date" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="localisation" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element ref="complement" minOccurs="0" maxOccurs="1"/>
+            </xs:sequence>
+            <xs:attribute name="id" type="xs:string" use="required"/>
+            <xs:attribute name="uri" type="xs:anyURI" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="type">
+        <xs:annotation>
+            <xs:documentation>Le type de document, en valeur codée et sous une forme textuelle.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="code" type="acteCodeType" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="personne">
+        <xs:annotation>
+            <xs:documentation>Une personne identifiée sur l'acte.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nom" minOccurs="0" maxOccurs="1"/>
+                <xs:element ref="prenoms" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nom" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Le nom d'une personne.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="prenoms" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Les prénoms d'une personne.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="date">
+        <xs:annotation>
+            <xs:documentation>Une date mentionnée dans le document. Une année précise est à écrire dans l'attribut annee. Une date imprécise est considérée comme du texte au sein de l'élément.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="code" type="acteCodeType"/>
+                    <xs:attribute name="annee" type="xs:gYear" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="localisation">
+        <xs:annotation>
+            <xs:documentation>Regroupe les informations sur les lieux mentionnés dans le document</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="departement"/>
+                <xs:element ref="pays"/>
+                <xs:element ref="precision" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="code" type="acteCodeType"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="pays">
+        <xs:annotation>
+            <xs:documentation>Pays ou territoire autre que la France.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="code" type="xs:string" use="optional"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="departement">
+        <xs:annotation>
+            <xs:documentation>Le département généralisé où l'acte a été enregistré.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:string">
+                    <xs:attribute name="code" type="xs:string" use="required"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="precision" type="xs:string">
+        <xs:annotation>
+            <xs:documentation>Des précisions sur le lieu, par exemple le nom de la commune, le lieu-dit ou la paroisse.</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="complement">
+        <xs:annotation>
+            <xs:documentation>Les compléments d'information disponibles pour ce document.</xs:documentation>
+        </xs:annotation>
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="conflit" type="xs:string" maxOccurs="1" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>nom du conflit (essentiellement pour les fiches mort pour la France)</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="code" type="xs:string" maxOccurs="1" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>cote du registre</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="niveau" type="xs:int" maxOccurs="1" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>niveau d'instruction de la personne (réservé aux actes décrivant une seule personne)</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="nro" type="xs:string" maxOccurs="1" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>numéro de matricule pour les registres militaires et les fiches mort pour la France</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="profession" type="xs:string" maxOccurs="unbounded" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>profession de la personne désignée dans l'acte (réservé aux actes décrivant une seule personne)</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+                <xs:element name="mention" type="xs:string" maxOccurs="1" minOccurs="0">
+                    <xs:annotation>
+                        <xs:documentation>Mention sur le statut de la personne pour les fiches mort pour la France (mort pour la France, non mort pour la France, etc).</xs:documentation>
+                    </xs:annotation>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="autre" type="xs:boolean" use="optional">
+                <xs:annotation>
+                    <xs:documentation>indique la présence d'informations plus complétes sur le site d'origine</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="numerise" type="xs:boolean" use="optional">
+                <xs:annotation>
+                    <xs:documentation>indique si un document numérisé est disponible sur le site d'origine</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+            <xs:attribute name="payant" type="xs:boolean" use="optional">
+                <xs:annotation>
+                    <xs:documentation>indique si l'accès aux informations complémentaires est payant</xs:documentation>
+                </xs:annotation>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="acteCodeType">
+        <xs:annotation>
+            <xs:documentation>Type d'acte</xs:documentation>
+        </xs:annotation>
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A">
+                <xs:annotation>
+                    <xs:documentation>Abjuration</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="AN">
+                <xs:annotation>
+                    <xs:documentation>Acte notarié</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="B">
+                <xs:annotation>
+                    <xs:documentation>Baptême</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BANS">
+                <xs:annotation>
+                    <xs:documentation>Bans de mariage</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CM">
+                <xs:annotation>
+                    <xs:documentation>Contrat de mariage</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="D">
+                <xs:annotation>
+                    <xs:documentation>Décès</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JU">
+                <xs:annotation>
+                    <xs:documentation>Jugement</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="M">
+                <xs:annotation>
+                    <xs:documentation>Mariage</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="N">
+                <xs:annotation>
+                    <xs:documentation>Naissance</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="MPF">
+                <xs:annotation>
+                    <xs:documentation>Mort pour la France</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="P">
+                <xs:annotation>
+                    <xs:documentation>Permission</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PR">
+                <xs:annotation>
+                    <xs:documentation>Promesse de mariage</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="PU">
+                <xs:annotation>
+                    <xs:documentation>Publication de mariage</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="R">
+                <xs:annotation>
+                    <xs:documentation>Résidence</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="RM">
+                <xs:annotation>
+                    <xs:documentation>Registre matricule </xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="RE">
+                <xs:annotation>
+                    <xs:documentation>Reconnaissance</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="REA">
+                <xs:annotation>
+                    <xs:documentation>Réhabilitation</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="RP">
+                <xs:annotation>
+                    <xs:documentation>Recensement</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="RT">
+                <xs:annotation>
+                    <xs:documentation>Rôle de taille</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="S">
+                <xs:annotation>
+                    <xs:documentation>Sépulture</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="SV">
+                <xs:annotation>
+                    <xs:documentation>Sans vie</xs:documentation>
+                </xs:annotation>
+            </xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:complexType name="localisationType">
+        <xs:attribute name="code" type="acteCodeType"/>
+    </xs:complexType>
+</xs:schema>
