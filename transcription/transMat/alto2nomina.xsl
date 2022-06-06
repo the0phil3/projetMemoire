@@ -9,7 +9,7 @@
 
     <xsl:template match="/" name="main">
         <xsl:result-document href="../outputMat/sortie.xml" method="xml">
-            <xsl:element name="document">
+            <xsl:element name="nomina">
                 <xsl:variable name="folderURI" select="resolve-uri('.', base-uri())"/>
 
                 <xsl:variable name="facsi">
@@ -26,15 +26,19 @@
         </xsl:result-document>
     </xsl:template>
 
+    <xsl:template match="alto:Description"/>
+
     <xsl:template match="alto:alto">
-        <!-- pour chaque élément alto, on crée un pb qui reprend la valeur qu'il y a dans fileName -->
+        <!-- pour chaque élément alto, on crée un document qui reprend la valeur qu'il y a dans fileName -->
         <xsl:element name="document">
+            <xsl:attribute name="id">
             <xsl:value-of select="alto:Description/alto:sourceImageInformation/alto:fileName"/>
+            </xsl:attribute>
         </xsl:element>
         <xsl:apply-templates/>
     </xsl:template>
 
-    <xsl:template match="alto:Description"/>
+    
     <xsl:template match="alto:TextLine[@TAGREFS = 'LT1209']">
         <xsl:element name="personne">
             <xsl:element name="nom">
@@ -45,7 +49,7 @@
     </xsl:template>
     <xsl:template match="alto:TextLine[@TAGREFS = 'LT1210']">
         <xsl:element name="personne">
-            <xsl:element name="prenom">
+            <xsl:element name="prenoms">
                 <xsl:value-of select="descendant::alto:String/@CONTENT"/>
             </xsl:element>
             <xsl:apply-templates/>

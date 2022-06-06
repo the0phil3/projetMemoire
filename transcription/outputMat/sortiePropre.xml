@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<nomina>
+<?xml-model href="nominaMod.xml" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-stylesheet type="text/xsl" href="transfoCSV.xsl"?>
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="RM">
    <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0001.jpeg"/>
    <localisation>
       <precision>O. Daredj</precision>
@@ -16,13 +18,12 @@
    <compliment>
       <nro>A 8863</nro>
    </compliment>
-   <date annee="presume en 1893">
-          </date>
+   <date annee="1893">
+   </date>
    <compliment>
       <mention>61eme Regiment de T. Ma-</mention>
    </compliment>
-   <compliment>13 fevrier 1918 pour 4 ans
-          </compliment>
+   <compliment>13 fevrier 1918 pour 4 ans </compliment>
    <compliment>
       <mention>Decede le 8 juillet 1921 a Seroux des</mention>
    </compliment>
@@ -38,20 +39,17 @@
    <compliment>
       <nro>A 8864</nro>
    </compliment>
-   <date annee="presume en 1887">
-          </date>
+   <date annee="1887">
+   </date>
    <compliment>
       <mention>libere le 13.2.26</mention>
    </compliment>
    <compliment>
       <mention>61 eme regiment de T. M.- 704</mention>
    </compliment>
-   <compliment>13 fevrier 1918 pour 10 ans
-          </compliment>
-   <compliment>26 juillet 1920 a compter du 13 fevrier 1922
-          </compliment>
-   <compliment>23 fevrier 1924 a gde 13 fervrier 1925 pour 1 an
-          </compliment>
+   <compliment>13 fevrier 1918 pour 10 ans </compliment>
+   <compliment>26 juillet 1920 a compter du 13 fevrier 1922 </compliment>
+   <compliment>23 fevrier 1924 a gde 13 fervrier 1925 pour 1 an </compliment>
    <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0002.jpeg"/>
    <localisation>
       <precision>Oulad Ali B Ale</precision>
@@ -68,13 +66,12 @@
    <compliment>
       <nro>A 8865</nro>
    </compliment>
-   <date annee="presume en 1893">
-          </date>
+   <date annee="1893">
+   </date>
    <compliment>
       <mention>61e Regt de T. M.</mention>
    </compliment>
-   <compliment>13 fevrier 1918 pour 4 ans
-          </compliment>
+   <compliment>13 fevrier 1918 pour 4 ans </compliment>
    <personne>
       <nom>Mohamed</nom>
    </personne>
@@ -84,13 +81,12 @@
    <compliment>
       <nro>A 8866</nro>
    </compliment>
-   <date annee="presume 1893">
-          </date>
+   <date annee="1893">
+   </date>
    <compliment>
       <mention>61e Regt de T. M.</mention>
    </compliment>
-   <compliment>13 fevrier 1918 pour 4 ans
-          </compliment>
+   <compliment>13 fevrier 1918 pour 4 ans </compliment>
    <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0003.jpeg"/>
    <localisation>
       <precision>Senarefa</precision>
@@ -107,13 +103,12 @@
    <compliment>
       <nro>A 8867</nro>
    </compliment>
-   <date annee="presume en 1894">
-          </date>
+   <date annee="1894">
+   </date>
    <compliment>
       <mention>61e Regt de T. M.</mention>
    </compliment>
-   <compliment>13 fevrier 1918 pour 4 ans
-          </compliment>
+   <compliment>13 fevrier 1918 pour 4 ans </compliment>
    <personne>
       <nom>Bhafi</nom>
    </personne>
@@ -123,13 +118,12 @@
    <compliment>
       <nro>A 8868</nro>
    </compliment>
-   <date annee="presume en 1893">
-          </date>
+   <date annee="  1893">
+   </date>
    <compliment>
       <mention>61 eme Regt de T. M.</mention>
    </compliment>
-   <compliment>14 fevrier 1918 pour 4 ans
-          </compliment>
+   <compliment>14 fevrier 1918 pour 4 ans </compliment>
    <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0004.jpeg"/>
    <localisation>
       <precision>Achadir</precision>
@@ -146,23 +140,20 @@
    <compliment>
       <nro>A 8869</nro>
    </compliment>
-   <date annee="presume en 1893">
-          </date>
+   <date annee="1893">
+   </date>
    <compliment>
       <mention>61e Regt. de T. M. affecte au 61e</mention>
    </compliment>
    <compliment>
       <mention>R.T.M D. N. 367 d8 28-10-1924 au general</mention>
    </compliment>
-   <compliment>14 fevrier 1918 pour 3 ans
-          </compliment>
+   <compliment>14 fevrier 1918 pour 3 ans </compliment>
    <compliment>
       <mention>commandant le 30eme C.A</mention>
    </compliment>
-   <compliment>29.1.21 au 5.12.24 pour 4 ans
-          </compliment>
-   <compliment>12.3.24 pour un 1 an
-          </compliment>
+   <compliment>29.1.21 au 5.12.24 pour 4 ans </compliment>
+   <compliment>12.3.24 pour un 1 an </compliment>
    <personne>
       <nom>Abdesselem</nom>
    </personne>
@@ -175,8 +166,8 @@
    <compliment>
       <nro>A 8870</nro>
    </compliment>
-   <date annee="presume en 1896">
-          </date>
+   <date annee="1896">
+   </date>
    <compliment>
       <mention>Rgt. T. M.</mention>
    </compliment>
@@ -196,8 +187,8 @@
    <compliment>
       <nro>A 8871</nro>
    </compliment>
-   <date annee="presume en 1898">
-          </date>
+   <date annee="1898">
+   </date>
    <compliment>
       <mention>61e Rgt. de T. M.</mention>
    </compliment>
@@ -210,12 +201,9 @@
    <compliment>
       <nro>A 8872</nro>
    </compliment>
-   <date annee="presume en 1893">
-          </date>
-   <compliment>14 fevrier 1918 4 ans
-          </compliment>
-   <compliment>14 fevrier 1922 pour 3 ans
-          </compliment>
-   <compliment>libere le 14-2-1925
-          </compliment>
-</nomina>
+   <date annee="1893">
+   </date>
+   <compliment>14 fevrier 1918 4 ans </compliment>
+   <compliment>14 fevrier 1922 pour 3 ans </compliment>
+   <compliment>libere le 14-2-1925 </compliment>
+</document>
