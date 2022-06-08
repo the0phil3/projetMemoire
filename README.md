@@ -1,4 +1,4 @@
-# Memoire en humanités numériques : Les soldats d'un conflit oublié : Une étude statistique des morts de la Guerre du Rif: 1925 - 1926
+# Les soldats d'un conflit oublié : Une étude statistique des morts de la Guerre du Rif: 1925 - 1926
 
 ![Guerriers Rifains](/manipFinal/rifiwarriors.jpeg)
 
@@ -18,8 +18,8 @@ Chaque dossier indique une étape et un travail que j'ai fait, même s'il n'éta
 **mini** --> mon dossier `Latex` pour mon mini-mémoire
 
 ## Abstract / Résumé 
-**Fr**
+**(Fr)**
  Il existe un manque important dans l'historiographie du Maroc et de l'empire français au sujet du sort des troupes coloniales et metropolitaines pendant la guerre du Rif. L'objectif de ce rapport est de mettre en lumière l'histoire et la trajectoire des differents régiments qui ont participé à cette guerre. Les méthodes quantitatives nous permettent réaliser une étude statistique ainsi qu'une géographie économique des ces soldats. Nous utilisons des méthodes classiques de data sciences afin de completer les sources qualitatives dont nous disposons sur cette guerre. 
  
- **En**
+ **(En)**
  The historiography of Morocco and France's colonial empire is rather shallow on the subject of the the French army's involvement in the Rif War. The objective of this dissertation is to highlight the diversity of regiments  that participated in the Rif War and the maintenance of France's colonial empire. Quantitative methods allow us to dissect and group soldiers in more precise ways, which would have been time consuming and costly in the past. The marriage of both quantitative and qualitative sources aims to provide new insights on the conflict. 
