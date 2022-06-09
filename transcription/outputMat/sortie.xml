@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document>
-   <document>archives_CAPM_E0017_1918_950_A8863-A9654-0001.jpeg</document>
+<nomina>
+   <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0001.jpeg"/>
    <localisation>
       <precision>O. Daredj</precision>
    </localisation>
@@ -11,7 +11,7 @@
       <nom>Abdesselem</nom>
    </personne>
    <personne>
-      <prenom>ben Zarouel</prenom>
+      <prenoms>ben Zarouel</prenoms>
    </personne>
    <compliment>
       <nro>A 8863</nro>
@@ -33,7 +33,7 @@
       <nom>Maati</nom>
    </personne>
    <personne>
-      <prenom>ben Bouazza</prenom>
+      <prenoms>ben Bouazza</prenoms>
    </personne>
    <compliment>
       <nro>A 8864</nro>
@@ -52,7 +52,7 @@
           </compliment>
    <compliment>23 fevrier 1924 a gde 13 fervrier 1925 pour 1 an
           </compliment>
-   <document>archives_CAPM_E0017_1918_950_A8863-A9654-0002.jpeg</document>
+   <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0002.jpeg"/>
    <localisation>
       <precision>Oulad Ali B Ale</precision>
    </localisation>
@@ -63,7 +63,7 @@
       <nom>Lhassen</nom>
    </personne>
    <personne>
-      <prenom>ben Mohamed</prenom>
+      <prenoms>ben Mohamed</prenoms>
    </personne>
    <compliment>
       <nro>A 8865</nro>
@@ -79,7 +79,7 @@
       <nom>Mohamed</nom>
    </personne>
    <personne>
-      <prenom>ben El Mekki</prenom>
+      <prenoms>ben El Mekki</prenoms>
    </personne>
    <compliment>
       <nro>A 8866</nro>
@@ -91,7 +91,7 @@
    </compliment>
    <compliment>13 fevrier 1918 pour 4 ans
           </compliment>
-   <document>archives_CAPM_E0017_1918_950_A8863-A9654-0003.jpeg</document>
+   <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0003.jpeg"/>
    <localisation>
       <precision>Senarefa</precision>
    </localisation>
@@ -102,7 +102,7 @@
       <nom>Hadjaj</nom>
    </personne>
    <personne>
-      <prenom>ben Bouazza</prenom>
+      <prenoms>ben Bouazza</prenoms>
    </personne>
    <compliment>
       <nro>A 8867</nro>
@@ -118,7 +118,7 @@
       <nom>Bhafi</nom>
    </personne>
    <personne>
-      <prenom>ben Laoussine</prenom>
+      <prenoms>ben Laoussine</prenoms>
    </personne>
    <compliment>
       <nro>A 8868</nro>
@@ -130,7 +130,7 @@
    </compliment>
    <compliment>14 fevrier 1918 pour 4 ans
           </compliment>
-   <document>archives_CAPM_E0017_1918_950_A8863-A9654-0004.jpeg</document>
+   <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0004.jpeg"/>
    <localisation>
       <precision>Achadir</precision>
    </localisation>
@@ -141,7 +141,7 @@
       <nom>Mohamed</nom>
    </personne>
    <personne>
-      <prenom>ben Haddou</prenom>
+      <prenoms>ben Haddou</prenoms>
    </personne>
    <compliment>
       <nro>A 8869</nro>
@@ -167,10 +167,10 @@
       <nom>Abdesselem</nom>
    </personne>
    <personne>
-      <prenom>El Fhady</prenom>
+      <prenoms>El Fhady</prenoms>
    </personne>
    <personne>
-      <prenom>ben</prenom>
+      <prenoms>ben</prenoms>
    </personne>
    <compliment>
       <nro>A 8870</nro>
@@ -180,7 +180,7 @@
    <compliment>
       <mention>Rgt. T. M.</mention>
    </compliment>
-   <document>archives_CAPM_E0017_1918_950_A8863-A9654-0006.jpeg</document>
+   <document id="archives_CAPM_E0017_1918_950_A8863-A9654-0006.jpeg"/>
    <localisation>
       <precision>Oulad Shawad</precision>
    </localisation>
@@ -191,7 +191,7 @@
       <nom>Ahmed</nom>
    </personne>
    <personne>
-      <prenom>bel Hady</prenom>
+      <prenoms>bel Hady</prenoms>
    </personne>
    <compliment>
       <nro>A 8871</nro>
@@ -205,7 +205,7 @@
       <nom>M' Barck</nom>
    </personne>
    <personne>
-      <prenom>ben Ali</prenom>
+      <prenoms>ben Ali</prenoms>
    </personne>
    <compliment>
       <nro>A 8872</nro>
@@ -218,4 +218,4 @@
           </compliment>
    <compliment>libere le 14-2-1925
           </compliment>
-</document>
+</nomina>

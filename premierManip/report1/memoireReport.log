@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.15)  8 APR 2022 10:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2021.10.15)  1 JUN 2022 17:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -241,7 +241,7 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 (/usr/local/texlive/2021/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 19.
+Package hyperref Info: Option `colorlinks' set `true' on input line 18.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
@@ -251,24 +251,24 @@ File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 (./memoireReport.aux)
 \openout1 = `memoireReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2020/02/24 v1.2b Standard LaTeX Color (DPC)
@@ -278,7 +278,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 27.
+Package hyperref Info: Link coloring ON on input line 26.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -292,9 +292,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count268
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
  (./memoireReport.out) (./memoireReport.out)
 \@outlinefile=\write4
 \openout4 = `memoireReport.out'.
@@ -323,28 +323,28 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <14.4> on input line 29.
+(Font)              <14.4> on input line 28.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 29.
+(Font)              <7> on input line 28.
 LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 3
-2.
+1.
 
 (/usr/local/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 32.
+(Font)              <12> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 31.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 32.
+(Font)              <6> on input line 31.
 <dbpic.png, id=17, 1194.4625pt x 728.7225pt>
 File: dbpic.png Graphic file (type png)
 <use dbpic.png>
-Package pdftex.def Info: dbpic.png  used on input line 35.
+Package pdftex.def Info: dbpic.png  used on input line 34.
 (pdftex.def)             Requested size: 322.50919pt x 196.7577pt.
 
-Overfull \hbox (42.14447pt too wide) in paragraph at lines 32--39
+Overfull \hbox (42.14447pt too wide) in paragraph at lines 31--38
 \T1/cmtt/m/n/12 memoiredeshommes . sga . defense . gouv . fr / fr / arkotheque 
 / navigation _ facette /
  []
@@ -352,7 +352,7 @@ Overfull \hbox (42.14447pt too wide) in paragraph at lines 32--39
 <mortsduRif.png, id=20, 1213.53375pt x 903.375pt>
 File: mortsduRif.png Graphic file (type png)
 <use mortsduRif.png>
-Package pdftex.def Info: mortsduRif.png  used on input line 43.
+Package pdftex.def Info: mortsduRif.png  used on input line 42.
 (pdftex.def)             Requested size: 327.6585pt x 243.9145pt.
 [1
 
@@ -361,20 +361,20 @@ Package pdftex.def Info: mortsduRif.png  used on input line 43.
 <20regiments.jpg, id=39, 846.2817pt x 385.6809pt>
 File: 20regiments.jpg Graphic file (type jpg)
 <use 20regiments.jpg>
-Package pdftex.def Info: 20regiments.jpg  used on input line 51.
+Package pdftex.def Info: 20regiments.jpg  used on input line 50.
 (pdftex.def)             Requested size: 507.77293pt x 231.41031pt.
 
-Overfull \hbox (117.77293pt too wide) in paragraph at lines 51--52
+Overfull \hbox (117.77293pt too wide) in paragraph at lines 50--51
  [][] 
  []
 
 <20places.jpg, id=40, 823.878pt x 368.8179pt>
 File: 20places.jpg Graphic file (type jpg)
 <use 20places.jpg>
-Package pdftex.def Info: 20places.jpg  used on input line 57.
+Package pdftex.def Info: 20places.jpg  used on input line 56.
 (pdftex.def)             Requested size: 494.33061pt x 221.29243pt.
 
-Overfull \hbox (104.33061pt too wide) in paragraph at lines 57--58
+Overfull \hbox (104.33061pt too wide) in paragraph at lines 56--57
  [][] 
  []
 
@@ -390,7 +390,7 @@ Overfull \vbox (1.86827pt too high) has occurred while \output is active []
 <schiavon.jpeg, id=55, 955.57pt x 869.2475pt>
 File: schiavon.jpeg Graphic file (type jpg)
 <use schiavon.jpeg>
-Package pdftex.def Info: schiavon.jpeg  used on input line 67.
+Package pdftex.def Info: schiavon.jpeg  used on input line 66.
 (pdftex.def)             Requested size: 382.22122pt x 347.69284pt.
  [4 <./schiavon.jpeg>]
 (./memoireReport.lof)
@@ -404,7 +404,7 @@ Package rerunfilecheck Info: File `memoireReport.out' has not changed.
 Here is how much of TeX's memory you used:
  9696 strings out of 478994
  154835 string characters out of 5858183
- 449660 words of memory out of 5000000
+ 449613 words of memory out of 5000000
  27002 multiletter control sequences out of 15000+600000
  412701 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
